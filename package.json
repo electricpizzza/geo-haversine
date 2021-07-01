@@ -6,9 +6,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "geo",
+    "geolocation",
+    "near"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electricpizzza/geo-comparesion.git"
+  },
+  "author": "Zakariae Dinar (ElectricPizzza)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/electricpizzza/geo-comparesion/issues"
+  },
+  "homepage": "https://github.com/electricpizzza/geo-comparesion#readme",
   "description": "",
   "devDependencies": {
     "typescript": "^4.3.5"
