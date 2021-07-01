@@ -1,3 +1,4 @@
 export class Range {
-  constructor() {}
+  constructor(public distance: number) {}
+  private earthR = 12742 / 2;
 }

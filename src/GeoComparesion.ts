@@ -3,11 +3,30 @@ import { Position } from "./Position";
 export class GeoComparesion {
   constructor() {}
 
-  getVectorialLength(firstPoint: Position, secondPoint: Position) {
-    const firstPointX = firstPoint.x;
-    const firstPointY = firstPoint.y;
-    const secondPointX = secondPoint.x;
-    const secondPointY = secondPoint.y;
+  public toPositionsList(...points: number[][]): Position[] {
+    const positions: Position[] = [];
+    if (points.length === 1) {
+    } else {
+    }
+    points.forEach((point) => {
+      positions.push(new Position(point));
+    });
+    return positions;
+  }
+
+  // public toPositionsList(points: number[][]): Position[] {
+  //   const positions: Position[] = [];
+  //   points.forEach((point) => {
+  //     positions.push(new Position(point));
+  //   });
+  //   return positions;
+  // }
+
+  public getVectorialLength(firstPoint: Position, secondPoint: Position) {
+    const firstPointX = firstPoint.lat;
+    const firstPointY = firstPoint.long;
+    const secondPointX = secondPoint.lat;
+    const secondPointY = secondPoint.long;
 
     return Math.sqrt(
       Math.pow(firstPointX - secondPointX, 2) +
@@ -15,7 +34,7 @@ export class GeoComparesion {
     );
   }
 
-  getTheNearestOfTowPoints(
+  public getTheNearestOfTowPoints(
     root: Position,
     firstPoint: Position,
     secondPoint: Position
@@ -26,7 +45,7 @@ export class GeoComparesion {
       : secondPoint;
   }
 
-  getTheNearestPoint(root: Position, ...points: Position[]): Position {
+  public getTheNearestPoint(root: Position, ...points: Position[]): Position {
     let theNearest = points[0];
     points.forEach((point) => {
       theNearest = this.getTheNearestOfTowPoints(root, point, theNearest);
@@ -34,12 +53,12 @@ export class GeoComparesion {
     return theNearest;
   }
 
-  gettheNearestPointsByRange(
+  public gettheNearestPointsByRange(
     root: Position,
     range: number,
     ...points: Position[]
   ): Position[] {
-    const theNearestPositions = [];
+    const theNearestPositions: Position[] = [];
     points.forEach((point) => {
       if (this.getVectorialLength(root, point) < range) {
         theNearestPositions.push(point);
