@@ -1,6 +1,6 @@
 import { Position } from "./Position";
 
-export class GeoComparesion {
+export class GeoHaversine {
   constructor() {}
 
   public toPositionsList(...points: number[][]): Position[] {

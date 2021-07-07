@@ -1,5 +1,5 @@
 {
-  "name": "geo-comparesion",
+  "name": "geo-haversine",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,14 +13,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electricpizzza/geo-comparesion.git"
+    "url": "git+https://github.com/electricpizzza/geo-haversine.git"
   },
   "author": "Zakariae Dinar (ElectricPizzza)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/electricpizzza/geo-comparesion/issues"
+    "url": "https://github.com/electricpizzza/geo-haversine/issues"
   },
-  "homepage": "https://github.com/electricpizzza/geo-comparesion#readme",
+  "homepage": "https://github.com/electricpizzza/geo-haversine#readme",
   "description": "",
   "devDependencies": {
     "typescript": "^4.3.5"
