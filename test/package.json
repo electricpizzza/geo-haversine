@@ -9,6 +9,6 @@
   "author": "zakariae.dianr@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "geo-haversine": "^1.0.2"
+    "geo-haversine": "^1.0.3"
   }
 }
