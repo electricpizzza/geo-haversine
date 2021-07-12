@@ -109,8 +109,8 @@ export class GeoHaversine {
   public gettheNearestPointsByRange(
     root: number[],
     range: number,
-    ...points: number[][] // ): Position[] {
-  ) {
+    ...points: number[][]
+  ): Position[] {
     if (root.length != 2)
       throw new Error("Position must be an array of tow numbers [Long,Lat]");
 
