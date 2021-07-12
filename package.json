@@ -1,6 +1,6 @@
 {
   "name": "geo-haversine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "GeoHaversine.js",
   "scripts": {
     "test": "node test/test.js",
