@@ -14,14 +14,6 @@ export class GeoHaversine {
     return positions;
   }
 
-  // public toPositionsList(points: number[][]): Position[] {
-  //   const positions: Position[] = [];
-  //   points.forEach((point) => {
-  //     positions.push(new Position(point));
-  //   });
-  //   return positions;
-  // }
-
   public getVectorialLength(firstPoint: Position, secondPoint: Position) {
     const firstPointX = firstPoint.lat;
     const firstPointY = firstPoint.long;
@@ -48,7 +40,7 @@ export class GeoHaversine {
    * to Get distance between tow point on a map by gelo location long,lat
    *
    */
-  public getDisttance(firstPoint: number[], secondPoint: number[]) {
+  public getDistance(firstPoint: number[], secondPoint: number[]) {
     if (firstPoint.length != 2 || secondPoint.length != 2)
       throw new Error("Position must be an array of tow numbers [Long,Lat]");
 
@@ -117,22 +109,22 @@ export class GeoHaversine {
   public gettheNearestPointsByRange(
     root: number[],
     range: number,
-    ...points: number[][]
-  ): Position[] {
+    ...points: number[][] // ): Position[] {
+  ) {
     if (root.length != 2)
       throw new Error("Position must be an array of tow numbers [Long,Lat]");
 
     const rootPos = new Position(root);
     const theNearestPositions: Position[] = [];
 
-    points.forEach((point) => {
+    for (let index = 0; index < points.length; index++) {
+      const point = points[index];
       if (point.length != 2)
         throw new Error("Position must be an array of tow numbers [Long,Lat]");
-
-      if (this.getVectorialLength(rootPos, new Position(point)) < range) {
+      if (this.getDistance(root, point) <= range) {
         theNearestPositions.push(new Position(point));
       }
-    });
+    }
     return theNearestPositions;
   }
 }

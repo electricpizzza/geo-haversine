@@ -13,9 +13,18 @@ export class Position {
     const secondPointX = this.lat;
     const secondPointY = this.long;
 
-    return Math.sqrt(
-      Math.pow(pointX - secondPointX, 2) + Math.pow(pointY - secondPointY, 2)
-    );
+    const R = 6371e3; // metres
+    const φ1 = (this.lat * Math.PI) / 180; // φ, λ in radians
+    const φ2 = (secondPointX * Math.PI) / 180;
+    const Δφ = ((secondPointX - this.lat) * Math.PI) / 180;
+    const Δλ = ((secondPointY - this.long) * Math.PI) / 180;
+    const a =
+      Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+      Math.cos(φ1) * Math.cos(φ2) +
+      Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return R * c;
   }
 
   public getTheNearestOfTowPoints(
