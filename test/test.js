@@ -1,4 +1,4 @@
-const { GeoHaversine } = require("../lib/GeoHaversine");
+const { GeoHaversine } = require("geo-haversine");
 
 const pos1 = [19.33365, -54.33665];
 const pos2 = [18.33365, -18.332255];
