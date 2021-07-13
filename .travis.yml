@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   - "14.17"
-
-deploy:
-  provider: npm
-  email: "zakariae.dinar@gmail.com"
-
-script: node test/test.js
+before_script:
+  - npm install geo-harvestine
+script: npm test
