@@ -6,13 +6,21 @@
 
 Is a pakage that used `The Haversine formula` to compare distance between two points on Earth using lat/long coordinates. to get the nearests points and get all posisions included in a range.
 
-This is great for use with the html5 geolocation api, which provides lat/long coordinates.
+This is great for use with project that use geolocation api, which provides lat/long coordinates to locate any position near you.
 
 ## Installation
 
 As any npm package you can install `geo-haversine` using:
 
-> npm install --save geo-haversine
+```bash
+$ npm install --save geo-haversine
+```
+
+Or by using yarn :
+
+```bash
+$ yarn add geo-haversine
+```
 
 ## Usage
 
