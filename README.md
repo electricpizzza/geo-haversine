@@ -104,4 +104,4 @@ This repository is available under the [ISC license](https://www.npmjs.com/packa
 ## Contact
 
 Feel freee to contact me on my [email](mailto:zakariae.dinar@gmail.com). or social media
-[Twiter](https://twitter.com/pizzafordinar) [Github](https://github.com/electricpizzza/) [LinkedIn](https://ma.linkedin.com/in/zakariae-dinar)
+[Twiter](https://twitter.com/pizzafordinar), [Github](https://github.com/electricpizzza/) or [LinkedIn](https://ma.linkedin.com/in/zakariae-dinar).
