@@ -1,12 +1,17 @@
 # Geo Haversine
 
-[![NPM version](https://img.shields.io/npm/v/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine) ![Dependencies](https://img.shields.io/david/sebastiansandqvist/geo-haversine.svg) [![build status](http://img.shields.io/travis/sebastiansandqvist/geo-haversine.svg)](https://travis-ci.org/sebastiansandqvist/geo-haversine) [![NPM license](https://img.shields.io/npm/l/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)
+[![NPM version](https://img.shields.io/npm/v/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)[![NPM license](https://img.shields.io/npm/l/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)
 
 ## About
 
 Is a pakage that used `The Haversine formula` to compare distance between two points on Earth using lat/long coordinates. to get the nearests points and get all posisions included in a range.
 
 This is great for use with project that use geolocation api, which provides lat/long coordinates to locate any position near you.
+
+- getDistance
+- getTheNearestOfTowPoints
+- getTheNearestPoint
+- gettheNearestPointsByRange
 
 ## Installation
 
@@ -83,3 +88,7 @@ const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1, pos2, pos3,.
 const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,14205359, ...posList);
 
 ```
+
+## Licence
+
+This repository is available under the [ISC license](https://www.npmjs.com/package/geo-haversine).
