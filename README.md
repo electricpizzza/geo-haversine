@@ -27,7 +27,51 @@ Get a couple of latitude/longitude coordinates, then use them as the arguments f
 ```javascript
 // ---------- [latitude, longitude];
 let pos1 = [36.151829, -115.143296];
-let pos2 = [36.151465, -115.146284];
+let pos2 = [35.151465, -45.146284];
 
 const distanceBetweenTowPoints = geoHaversine.getDistance(pos1, pos2);
+```
+
+Get an array of latitude/longitude coordinates, then use them as the arguments for the `getTheNearestPoint` method to get the nearest point in a map. Example:
+
+```javascript
+// ---------- [latitude, longitude];
+let pos1 = [36.151829, -115.143296];
+let pos2 = [35.151465, -45.146284];
+let pos3 = [16.151465, -53.485613];
+.
+.
+.
+let posN = [36.12388, -115.369423];
+
+const theNearestOfTowPoint = geoHaversine.getTheNearestOfTowPoints(pos1,pos2,pos3);
+
+const nearestPoint = geoHaversine.getTheNearestPoint(pos1, pos2, pos3,..., posN);
+
+```
+
+Get an array of latitude/longitude coordinates, then use them as the arguments for the `getTheNearestPoint` method to get the nearest point in a map. Example:
+
+```javascript
+// ---------- [latitude, longitude];
+let pos1 = [36.151829, -115.143296];
+let pos2 = [35.151465, -45.146284];
+let pos3 = [16.151465, -53.485613];
+.
+.
+.
+let posN = [36.12388, -115.369423];
+
+let posList = [
+    [55.3328, -66.325533],
+  [54.3328, -6.325533],
+  [5.3328, -56.325533],
+  [69.3328, 16.325533],
+  [55.3328, -66.325593],
+]
+
+const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1, pos2, pos3,..., posN);
+
+const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,14205359, ...posList);
+
 ```
