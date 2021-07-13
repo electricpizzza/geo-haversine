@@ -91,6 +91,17 @@ const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,range, ...pos
 
 ```
 
+## Support
+
+If you have a feature request, or spotted a bug or a technical problem, [create an issue here](https://github.com/electricpizzza/geo-haversine/issues/new).
+
+For other questions, [contact me](mailto:zakariae.dinar@gmail.com).
+
 ## Licence
 
 This repository is available under the [ISC license](https://www.npmjs.com/package/geo-haversine).
+
+## Contact
+
+Feel freee to contact me on my [email](mailto:zakariae.dinar@gmail.com). or social media
+[Twiter](https://twitter.com/pizzafordinar) [Github](https://github.com/electricpizzza/) [LinkedIn](https://ma.linkedin.com/in/zakariae-dinar)
