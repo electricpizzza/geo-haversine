@@ -63,7 +63,7 @@ let pos3 = [16.151465, -53.485613];
 let posN = [36.12388, -115.369423];
 
 let posList = [
-    [55.3328, -66.325533],
+  [55.3328, -66.325533],
   [54.3328, -6.325533],
   [5.3328, -56.325533],
   [69.3328, 16.325533],
@@ -71,7 +71,7 @@ let posList = [
 ]
 
 const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1, pos2, pos3,..., posN);
-
+// or
 const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,14205359, ...posList);
 
 ```
