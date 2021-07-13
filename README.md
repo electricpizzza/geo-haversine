@@ -1,6 +1,6 @@
 # Geo Haversine
 
-[![NPM version](https://img.shields.io/npm/v/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)[![NPM license](https://img.shields.io/npm/l/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)
+[![NPM version](https://img.shields.io/npm/v/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine) [![NPM license](https://img.shields.io/npm/l/geo-haversine.svg)](https://www.npmjs.com/package/geo-haversine)
 
 ## About
 
