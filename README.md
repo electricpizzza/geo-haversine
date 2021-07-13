@@ -83,9 +83,11 @@ let posList = [
   [55.3328, -66.325593],
 ]
 
-const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1, pos2, pos3,..., posN);
+const range = 14205359; // Distance of radius in meters.
+
+const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,range, pos2, pos3,..., posN);
 // or
-const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,14205359, ...posList);
+const pointsInRange = geoHaversine.gettheNearestPointsByRange(pos1,range, ...posList);
 
 ```
 
