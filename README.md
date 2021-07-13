@@ -99,7 +99,7 @@ For other questions, [contact me](mailto:zakariae.dinar@gmail.com).
 
 ## Licence
 
-This repository is available under the [ISC license](https://www.npmjs.com/package/geo-haversine).
+This repository is available under the [MIT license](https://www.npmjs.com/package/geo-haversine).
 
 ## Contact
 

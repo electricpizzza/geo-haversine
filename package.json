@@ -17,7 +17,7 @@
     "url": "git+https://github.com/electricpizzza/geo-haversine.git"
   },
   "author": "Zakariae Dinar (ElectricPizzza)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/electricpizzza/geo-haversine/issues"
   },
