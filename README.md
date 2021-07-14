@@ -4,7 +4,7 @@
 
 ## About
 
-Is a pakage that used `The Haversine formula` to compare distance between two points on Earth using lat/long coordinates. to get the nearests points and get all posisions included in a range.
+Is a package that used The Haversine formula to compare distance between two points on Earth using lat/long coordinates. to get the nearest points and get all positions included in a range.
 
 This is great for use with project that use geolocation api, which provides lat/long coordinates to locate any position near you.
 
